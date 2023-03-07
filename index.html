@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinClicker Mini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="screen">
+        <div id="game">
+            <div id="game_background"></div>
+            <div id="game_elements">
+                <div id="barn1_container">
+                    <img id="barn1_sprite" src="barn-removebg-preview.png" alt="barn">
+                </div>
+                <div id="barn2_container">
+                    <img id="barn2_sprite" src="barn2.png" alt="barn">
+                </div>
+                <div id="terrorist1_container">
+                    <img id="terrorist1_sprite" src="terrorist-removebg-preview.png" alt="terrorist">
+                </div>
+
+                <div id="terrorist2_container">
+                    <img id="terrorist2_sprite" src="terrorist2.png" alt="terrorist">
+                </div>
+
+                <div id="bombe_container">
+                    <img id="bombe_sprite" src="bombe-removebg-preview.png" alt="bombe">
+                </div>
+
+            </div>
+            <div id="game_ui">
+                <div id="score_board">
+                    <span id="point_count">0</span>
+                    <img id="medalje_image" src="medalje-liv.png">
+                </div>
+                <div id="heart_board">
+                    <img id="heart1" src="hjerte-liv.png" class="active_heart">
+                    <img id="heart2" src="hjerte-liv.png" class="active_heart">
+                    <img id="heart3" src="hjerte-liv.png" class="active_heart">
+                </div>
+                <div id="time_board">
+                    <div id="time_container">
+                        <div id="time_sprite" class="shrink"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="start">
+            <h2>Bekæmp Terroren!</h2>
+                <p>Skyd terroristerne, bomberne og undgå de civile, for at klare spillet!</p>
+                <button id="btn_start" class="pulse">Start!</button>
+        </div>
+        <div id="start" class="hidden"></div>
+        <div id="game_over" class="hidden">
+            <h2>Game over...</h2>
+            <button id="btn_restart" class="pulse">Try Again!</button>
+        </div>
+        <div id="level_complete" class="hidden">
+            <h2>Level Complete!</h2>
+            <button id="btn_go_to_start" class="pulse">Go To Start!</button>
+        </div>
+    </div>
+
+    <audio id="sound_game" src="game_sound.mp3"></audio>
+    <audio id="sound_terrorist" src="terrorist_sound.mp3"></audio>
+    <audio id="sound_start" src="start_sound.mp3"></audio>
+    <audio id="sound_level_complete" src="level_complete.mp3"></audio>
+    <audio id="sound_game_over" src="game_over.mp3"></audio>
+    <audio id="sound_bombe" src="bomb_sound.mp3"></audio>
+    <audio id="sound_barn" src="barn_scream.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
